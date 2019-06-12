@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HGR-iq-lvD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_img" translatesAutoresizingMaskIntoConstraints="NO" id="D3D-Ss-4Bo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-WN-iRp">
+                                        <rect key="frame" x="106" y="242" width="162" height="162"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="1zs-b8-2hd">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1zs-b8-2hd" firstAttribute="top" secondItem="z2S-WN-iRp" secondAttribute="top" id="7ym-Zk-QQw"/>
+                                            <constraint firstAttribute="trailing" secondItem="1zs-b8-2hd" secondAttribute="trailing" id="9VT-Cy-5yq"/>
+                                            <constraint firstItem="1zs-b8-2hd" firstAttribute="leading" secondItem="z2S-WN-iRp" secondAttribute="leading" id="U0x-0T-QFZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="1zs-b8-2hd" secondAttribute="bottom" id="kto-aC-4Yc"/>
+                                            <constraint firstAttribute="width" secondItem="z2S-WN-iRp" secondAttribute="height" multiplier="1:1" id="vht-7C-ZwZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="D3D-Ss-4Bo" firstAttribute="top" secondItem="HGR-iq-lvD" secondAttribute="top" id="68t-sA-zOE"/>
+                                    <constraint firstItem="z2S-WN-iRp" firstAttribute="centerY" secondItem="HGR-iq-lvD" secondAttribute="centerY" id="Vf7-tT-FFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="D3D-Ss-4Bo" secondAttribute="trailing" id="XXk-yd-8F5"/>
+                                    <constraint firstItem="z2S-WN-iRp" firstAttribute="centerX" secondItem="HGR-iq-lvD" secondAttribute="centerX" id="e5j-Nz-MOl"/>
+                                    <constraint firstItem="D3D-Ss-4Bo" firstAttribute="leading" secondItem="HGR-iq-lvD" secondAttribute="leading" id="hO4-8i-IPW"/>
+                                    <constraint firstAttribute="bottom" secondItem="D3D-Ss-4Bo" secondAttribute="bottom" id="na6-Wr-ggW"/>
+                                    <constraint firstItem="z2S-WN-iRp" firstAttribute="height" secondItem="D3D-Ss-4Bo" secondAttribute="height" multiplier="0.25" id="wYg-1V-FGE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HGR-iq-lvD" secondAttribute="trailing" id="BHk-xL-dCP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HGR-iq-lvD" secondAttribute="bottom" id="eVh-CA-haJ"/>
+                            <constraint firstItem="HGR-iq-lvD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hE1-0c-8g5"/>
+                            <constraint firstItem="HGR-iq-lvD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="naX-BA-rD2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_img" width="320" height="568"/>
+        <image name="splash_logo" width="171" height="155"/>
+    </resources>
+</document>
